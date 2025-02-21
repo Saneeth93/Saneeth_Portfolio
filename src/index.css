@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#0f1119] text-gray-100;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 text-gray-300 hover:text-white transition-colors;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-white mb-12 text-center;
+  }
+
+  .network-background {
+    @apply absolute inset-0 overflow-hidden z-0;
+    background: linear-gradient(to bottom right, #0f1119 0%, #0f1119 100%);
+  }
+
+  .network-grid {
+    @apply absolute inset-0;
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2px, transparent 0),
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px, 50px 50px, 50px 50px;
+    background-position: -25px -25px, -25px -25px, -25px -25px;
+    animation: networkMove 150s linear infinite;
+  }
+
+  .card {
+    @apply bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10 hover:border-blue-500/50 transition-colors;
+  }
+
+  .skill-card {
+    @apply bg-white/5 backdrop-blur-sm rounded-lg p-4 text-center border border-white/10 hover:border-blue-500/50 transition-colors;
+  }
+
+  .tech-badge {
+    @apply px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm;
+  }
+
+  .input-field {
+    @apply w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400
+    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .submit-button {
+    @apply w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 
+    transition-colors font-medium;
+  }
+}
+
+@keyframes networkMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, -50px);
+  }
+}
+
+.logo {
+  @apply text-2xl font-bold text-blue-500;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.view-button {
+  @apply bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 
+  transition-all transform hover:scale-105 inline-flex items-center gap-2 font-medium;
+}
+
+.download-button {
+  @apply bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 
+  transition-all transform hover:scale-105 inline-flex items-center gap-2 font-medium;
+}
