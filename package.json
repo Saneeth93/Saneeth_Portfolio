@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "react-scripts start",  // For development
+    "build": "react-scripts build",  // To create a production build of your app
+    "predeploy": "npm run build",    // Runs the build script before deploying
+    "deploy": "gh-pages -d build"   // Deploys the build folder to GitHub Pages
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
