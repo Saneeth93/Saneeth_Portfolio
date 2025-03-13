@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",  // For development
-    "build": "react-scripts build",  // To create a production build of your app
-    "predeploy": "npm run build",    // Runs the build script before deploying
-    "deploy": "gh-pages -d build"   // Deploys the build folder to GitHub Pages
+    "start": "react-scripts start", 
+    "build": "react-scripts build",  
+    "predeploy": "npm run build",    
+    "deploy": "gh-pages -d build"   
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
