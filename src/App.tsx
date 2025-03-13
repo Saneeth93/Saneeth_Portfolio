@@ -62,7 +62,7 @@ function App() {
       <nav className="fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <a href="/" className="logo">PK</a>
+            <a href="/" className="logo">SR</a>
             <div className="flex items-center space-x-1">
               <a href="#home" className="nav-link">Home</a>
               <a href="#about" className="nav-link">About</a>
