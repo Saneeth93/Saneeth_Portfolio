@@ -120,7 +120,7 @@ function App() {
             <img
               src="https://raw.githubusercontent.com/Saneeth93/Saneeth_Portfolio/refs/heads/main/public/images/profile.png"
               alt="Profile"
-              className="rounded-lg w-64 h-64 object-cover"
+              className="rounded-lg w-84 h-64 object-cover"
             />
           </div>
         </div>
