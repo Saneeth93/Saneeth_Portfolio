@@ -1,27 +1,6 @@
 import React from 'react';
 import { Download, Eye, Github, Mail, Phone, MapPin, ExternalLink, Briefcase, GraduationCap, Code, CheckCircle2 } from 'lucide-react';
 
-const projects = [
-  {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/username/project1'
-  },
-  {
-    title: 'Project 2',
-    description: 'Description of project 2',
-    tech: ['Python', 'Django', 'PostgreSQL'],
-    github: 'https://github.com/username/project2'
-  }
-];
-
-const skills = [
-  'JavaScript', 'TypeScript', 'React', 'Node.js', 
-  'Python', 'Java', 'SQL', 'MongoDB',
-  'Git', 'Docker', 'AWS', 'Salesforce'
-];
-
 const workExperience = [
   {
     title: "Salesforce Administrator/Developer",
@@ -50,6 +29,27 @@ const workExperience = [
   }
 ];
 
+const projects = [
+  {
+    title: 'Project 1',
+    description: 'Description of project 1',
+    tech: ['React', 'Node.js', 'MongoDB'],
+    github: 'https://github.com/username/project1'
+  },
+  {
+    title: 'Project 2',
+    description: 'Description of project 2',
+    tech: ['Python', 'Django', 'PostgreSQL'],
+    github: 'https://github.com/username/project2'
+  }
+];
+
+const skills = [
+  'JavaScript', 'TypeScript', 'React', 'Node.js', 
+  'Python', 'Java', 'SQL', 'MongoDB',
+  'Git', 'Docker', 'AWS', 'Salesforce'
+];
+
 function App() {
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -62,7 +62,7 @@ function App() {
       <nav className="fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <a href="/" className="logo">SR</a>
+            <a href="/" className="logo">PK</a>
             <div className="flex items-center space-x-1">
               <a href="#home" className="nav-link">Home</a>
               <a href="#about" className="nav-link">About</a>
@@ -171,15 +171,15 @@ function App() {
         </h2>
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-purple-500/30"></div>
-          <div className="space-y-12">
+          <div className="space-y-32">
             {workExperience.map((job, index) => (
               <div key={index} className="relative">
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
                   <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
                     <Briefcase className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className={`card ml-[50%] relative ${index % 2 === 0 ? 'mr-8' : 'mr-0'}`}>
+                <div className={`card w-[calc(50%-2rem)] ${index === 0 ? 'mr-[50%] ml-0' : 'ml-[50%] mr-0'}`}>
                   <h3 className="text-xl font-semibold">{job.title}</h3>
                   <p className="text-gray-400">{job.company} | {job.period} | {job.location}</p>
                   <div className="mt-3">
