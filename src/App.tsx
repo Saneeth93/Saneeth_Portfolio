@@ -31,23 +31,23 @@ const workExperience = [
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/username/project1'
+    title: 'AI-Powered Inventory Management System',
+    description: 'Developed an intelligent inventory system using TensorFlow, reducing holding costs by 20%. Built real-time dashboards with React and deployed on Google Cloud Platform with CI/CD pipelines.',
+    tech: ['React', 'Python', 'TensorFlow', 'Google Cloud'],
+    github: 'https://github.com/username/inventory-management'
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2',
-    tech: ['Python', 'Django', 'PostgreSQL'],
-    github: 'https://github.com/username/project2'
+    title: 'Vowel Onset Point Detection Using Spectral Evidence',
+    description: 'Developed a vowel onset point (VOP) detection system crucial for speech processing applications such as automatic speech recognition and speaker identification. Implemented signal processing techniques using MATLAB and Python, leveraging spectral analysis and Librosa for feature extraction.',
+    tech: ['MATLAB', 'Python', 'Librosa', 'NumPy', 'SciPy'],
+    github: 'https://github.com/username/vop-detection'
   }
 ];
 
 const skills = [
   'JavaScript', 'TypeScript', 'React', 'Node.js', 
   'Python', 'Java', 'SQL', 'MongoDB',
-  'Git', 'Docker', 'AWS', 'Salesforce'
+  'Git', 'Docker', 'AWS', 'Matlab'
 ];
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
       <nav className="fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <a href="/" className="logo">PK</a>
+            <a href="/" className="logo">SR</a>
             <div className="flex items-center space-x-1">
               <a href="#home" className="nav-link">Home</a>
               <a href="#about" className="nav-link">About</a>
@@ -81,10 +81,10 @@ function App() {
       <section id="home" className="min-h-screen flex items-center justify-center relative">
         <div className="text-center space-y-8 z-10">
           <h1 className="text-6xl sm:text-7xl font-bold text-white">
-            Pavan Kumar Kuruva
+            Saneeth Reddy Etikala
           </h1>
           <h2 className="text-2xl sm:text-3xl text-gray-300">
-            Salesforce Developer | Full Stack Developer
+            Electrical And Computer Engineering
           </h2>
           <div className="pt-8 flex justify-center gap-4">
             <a 
@@ -113,14 +113,12 @@ function App() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <p className="text-lg text-gray-300">
-              I am a passionate Software Developer with expertise in Salesforce and Full Stack Development.
-              With a strong foundation in both front-end and back-end technologies, I create scalable
-              and efficient solutions that drive business value.
+            Motivated Electrical and Computer Engineering graduate with expertise in embedded systems, data analytics, ML, and software development. Experienced in teaching, research, and industry projects, with skills in MATLAB, Python, C, and Verilog. Seeking a full-time role to apply technical, problem-solving, and research skills in engineering, software development, or data science.
             </p>
           </div>
           <div className="flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+              src="/Users/saneethreddyetikala/Desktop/Saneeth_Portfolio/public/images/profile.jpg"
               alt="Profile"
               className="rounded-lg w-64 h-64 object-cover"
             />
@@ -129,79 +127,162 @@ function App() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="section-container relative z-10">
-        <h2 className="section-title flex items-center justify-center gap-3">
-          <GraduationCap className="w-8 h-8 text-purple-500" />
-          Education
-        </h2>
-        <div className="space-y-8">
-          <div className="card">
-            <div className="space-y-4">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="text-xl font-semibold">Bachelor of Technology in Computer Science</h3>
-                  <p className="text-gray-400">University of Technology • Boston, MA</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-gray-400">2016 - 2020</p>
-                  <p className="text-blue-400">GPA: 3.8/4.0</p>
-                </div>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium text-gray-300">Related Coursework</h4>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  <span className="tech-badge">Data Structures</span>
-                  <span className="tech-badge">Algorithms</span>
-                  <span className="tech-badge">Database Systems</span>
-                  <span className="tech-badge">Web Development</span>
-                  <span className="tech-badge">Cloud Computing</span>
-                  <span className="tech-badge">Software Engineering</span>
-                </div>
-              </div>
-            </div>
+<section id="education" className="section-container relative z-10">
+  <h2 className="section-title flex items-center justify-center gap-3">
+    <GraduationCap className="w-8 h-8 text-purple-500" />
+    Education
+  </h2>
+  <div className="space-y-8">
+    <div className="card">
+      <div className="space-y-4">
+        <div className="flex justify-between items-start">
+          <div>
+            <h3 className="text-xl font-semibold">Master of Science in Electrical and Computer Engineering</h3>
+            <p className="text-gray-400">University of New Mexico • Albuquerque, NM</p>
+          </div>
+          <div className="text-right">
+            <p className="text-gray-400">Feb 2023 - Dec 2023</p>
+            <p className="text-blue-400">CGPA: 3.9/4.0</p>
           </div>
         </div>
-      </section>
+        <div>
+          <h4 className="text-lg font-medium text-gray-300">Related Coursework</h4>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <span className="tech-badge">Microprocessor System Design</span>
+            <span className="tech-badge">Computer Architecture</span>
+            <span className="tech-badge">Reinforcement Learning</span>
+            <span className="tech-badge">IoT</span>
+            <span className="tech-badge">Machine Learning</span>
+            <span className="tech-badge">Cybersecurity</span>
+            <span className="tech-badge">Computer Networks</span>
+            <span className="tech-badge">Advanced Computer Architecture</span>
+            <span className="tech-badge">Digital Signal Processing</span>
+            <span className="tech-badge">Signals and Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      {/* Work Experience Section */}
+<section id="experience" className="section-container relative z-10">
+  <h2 className="section-title flex items-center justify-center gap-3">
+    <Briefcase className="w-8 h-8 text-purple-500" />
+    Work Experience
+  </h2>
+  <div className="relative">
+    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-purple-500/30"></div>
+    <div className="space-y-32">
+      {/* Graduate Apprenticeship - University of New Mexico */}
+      <div className="relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
+          <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
+            <Briefcase className="w-5 h-5 text-white" />
+          </div>
+        </div>
+        <div className="card w-[calc(50%-2rem)] mr-[50%]">
+          <h3 className="text-xl font-semibold">Graduate Apprenticeship</h3>
+          <p className="text-gray-400">University of New Mexico | Jan 2024 – Present | Albuquerque, NM</p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Planned and presented lectures and activities on MATLAB and Python, utilizing speed grader for efficient assessment.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Graded assignments and tests, ensuring timely feedback for students.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Designed and maintained course web resources using HTML, CSS, and JavaScript, enhancing accessibility and student engagement.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Developed Python scripts to automate grading and student progress tracking, improving efficiency by 30%.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-      {/* Experience Section */}
-      <section id="experience" className="section-container relative z-10">
-        <h2 className="section-title flex items-center justify-center gap-3">
-          <Briefcase className="w-8 h-8 text-purple-500" />
-          Work Experience
-        </h2>
-        <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-purple-500/30"></div>
-          <div className="space-y-32">
-            {workExperience.map((job, index) => (
-              <div key={index} className="relative">
-                <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
-                  <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
-                    <Briefcase className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className={`card w-[calc(50%-2rem)] ${index === 0 ? 'mr-[50%] ml-0' : 'ml-[50%] mr-0'}`}>
-                  <h3 className="text-xl font-semibold">{job.title}</h3>
-                  <p className="text-gray-400">{job.company} | {job.period} | {job.location}</p>
-                  <div className="mt-3">
-                    <div className="flex items-center gap-2 text-blue-400">
-                      <Code className="w-4 h-4" />
-                      {job.technologies.join(', ')}
-                    </div>
-                  </div>
-                  <ul className="mt-4 space-y-2">
-                    {job.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
-                        <span className="text-gray-300">{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
+      {/* Teaching Assistant - University of New Mexico */}
+      <div className="relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
+          <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
+            <Briefcase className="w-5 h-5 text-white" />
           </div>
         </div>
-      </section>
+        <div className="card w-[calc(50%-2rem)] ml-[50%]">
+          <h3 className="text-xl font-semibold">Teaching Assistant</h3>
+          <p className="text-gray-400">University of New Mexico | Feb 2023 – Dec 2023 | Albuquerque, NM</p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Led lectures and lab sessions for ECE 314L (Signals and Systems) and ECE 130L (Engineering Computing).</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Graded assignments and assisted students in MATLAB and speed grading.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Quality Specialist - Amazon Development Centre */}
+      <div className="relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
+          <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
+            <Briefcase className="w-5 h-5 text-white" />
+          </div>
+        </div>
+        <div className="card w-[calc(50%-2rem)] mr-[50%]">
+          <h3 className="text-xl font-semibold">Quality Specialist</h3>
+          <p className="text-gray-400">Amazon Development Centre | Oct 2021 – Oct 2022 | Hyderabad, India</p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Developed and optimized SQL queries in PostgreSQL, reducing query execution time by 45%.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Designed and implemented Python scripts to automate data processing tasks, reducing manual effort by 60%.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Extracted and analyzed large datasets using SQL and Python (Pandas, NumPy), improving decision-making for Amazon Go stores.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* QA Expert - Chegg India */}
+      <div className="relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-4">
+          <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
+            <Briefcase className="w-5 h-5 text-white" />
+          </div>
+        </div>
+        <div className="card w-[calc(50%-2rem)] ml-[50%]">
+          <h3 className="text-xl font-semibold">QA Expert (Freelance)</h3>
+          <p className="text-gray-400">Chegg India | Mar 2021 – Oct 2021 | Hyderabad, India</p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Helped students solve computer science textbook problems using Python and web development.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Worked closely with cross-functional teams, improving deployment efficiency by 15% through Agile methodologies.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-purple-500 mt-1 flex-shrink-0" />
+              <span className="text-gray-300">Optimized problem-solving techniques, reducing solution time by 25% while maintaining accuracy.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Skills Section */}
       <section id="skills" className="section-container relative z-10">
@@ -250,20 +331,20 @@ function App() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <Mail className="w-6 h-6 text-blue-400" />
-              <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-white">
-                your.email@example.com
+              <a href="mailto:your.Saneeth9393@gmail.com" className="text-gray-300 hover:text-white">
+                Saneeth9393@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="w-6 h-6 text-blue-400" />
-              <a href="tel:+1234567890" className="text-gray-300 hover:text-white">
-                +1 (234) 567-890
+              <a href="tel:+1 5058104308" className="text-gray-300 hover:text-white">
+                +1 (505) 810-4308
               </a>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="w-6 h-6 text-blue-400" />
               <span className="text-gray-300">
-                Your Location
+                Overland park , Kansas 
               </span>
             </div>
           </div>
