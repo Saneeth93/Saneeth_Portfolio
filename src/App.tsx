@@ -88,7 +88,7 @@ function App() {
           </h2>
           <div className="pt-8 flex justify-center gap-4">
             <a 
-              href="/resume.pdf" 
+              href="https://github.com/Saneeth93/Saneeth_Portfolio/blob/main/public/Resume/resume.pdf" 
               target="_blank"
               className="view-button"
             >
@@ -96,7 +96,7 @@ function App() {
               View Resume
             </a>
             <a 
-              href="/resume.pdf" 
+              href="https://github.com/Saneeth93/Saneeth_Portfolio/blob/main/public/Resume/resume.pdf" 
               download 
               className="download-button"
             >
