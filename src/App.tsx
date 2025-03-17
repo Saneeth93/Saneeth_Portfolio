@@ -118,7 +118,7 @@ function App() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/Users/saneethreddyetikala/Desktop/Saneeth_Portfolio/public/images/profile.jpg"
+              src="https://github.com/Saneeth93/Saneeth_Portfolio/blob/main/public/images/profile.jpg"
               alt="Profile"
               className="rounded-lg w-64 h-64 object-cover"
             />
